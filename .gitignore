@@ -1,0 +1,84 @@
+# Environment
+.env
+.venv/
+venv/
+env/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+eggs/
+*.egg
+.Python
+
+# Data files (keep structure, ignore large data)
+data/raw/*.csv
+data/raw/*.json
+data/staging/*.csv
+data/staging/*.parquet
+data/cleaned/*.csv
+data/cleaned/*.parquet
+data/analytical/*.csv
+data/analytical/*.parquet
+data/model_ready/*.csv
+data/model_ready/*.parquet
+data/rejected/*.csv
+data/rejected/*.json
+data/weather_cache.db
+!data/raw/.gitkeep
+!data/staging/.gitkeep
+!data/cleaned/.gitkeep
+!data/analytical/.gitkeep
+!data/model_ready/.gitkeep
+!data/rejected/.gitkeep
+
+# Airflow
+airflow/logs/
+airflow/airflow.db
+airflow/airflow.cfg
+airflow/airflow-webserver.pid
+airflow/standalone_admin_password.txt
+
+# MLflow
+mlruns/
+mlartifacts/
+mlflow.db
+
+# Models
+models/*.pkl
+models/*.joblib
+models/*.json
+!models/.gitkeep
+
+# Docker
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Distribution
+*.tar.gz
+*.whl
